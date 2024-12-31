@@ -5,7 +5,7 @@ html {
 }
 .app {
   position: relative;
-  background-color: #aad5ff;
+  background-color: #363636;
   height: 100vh;
   display: flex;
   font-family: "Roboto Condensed", sans-serif;
@@ -53,12 +53,12 @@ h3:hover {
 .first {
   display: flex;
   box-sizing: border-box;
-
+  padding-bottom: 20px;
   flex-direction: column;
   position: absolute;
   justify-content: center;
   align-items: center;
-  background-color: #148bff;
+  background: linear-gradient(to bottom right, #5e8dff, #d0d7ff);
   width: 148px;
   height: 231px;
   top: 0;
@@ -99,7 +99,7 @@ p:hover,
   height: 148px;
   left: 0;
   bottom: 0;
-  background-color: #148bff;
+  background: linear-gradient(to bottom right, #d4af37, #4b4b4b);
   transition: bottom 0.4s ease, left 0.4s ease, transform 0.4s ease;
 }
 h3 {
@@ -131,7 +131,7 @@ h3 {
   height: 148px;
   top: 0;
   right: 0;
-  background-color: #148bff;
+  background: linear-gradient(to bottom right, #4a4a4a, #a3a3a3);
   transition: top 0.4s ease, right 0.4s ease, transform 0.4s ease;
 }
 
@@ -146,7 +146,7 @@ h3 {
   height: 231px;
   right: 0;
   bottom: 0;
-  background-color: #148bff;
+  background: linear-gradient(to bottom right, #333333, #1c1c1c);
   transition: right 0.4s ease, bottom 0.4s ease, transform 0.4s ease;
 }
 .forth > p {
@@ -168,10 +168,11 @@ p > span {
 }
 .show-content {
   opacity: 0;
-  transition: opacity 0.2s ease-in;
+  transition: opacity 0.5s ease;
 }
 .show:hover .show-content {
   opacity: 1;
+  transition: opacity 0.5s ease;
 }
 .box-1:hover .first {
   transform: rotate(-20deg) translate(0, 0);
